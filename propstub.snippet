@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-    <CodeSnippet Format="1.0.0">
-        <Header>
-            <Title>Full property with any kind of backing</Title>
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Full property with any kind of backing</Title>
 			<Author>Jan Sandbrink</Author>
 			<Shortcut>propstub</Shortcut>
-        </Header>
-        <Snippet>
-		    <Declarations>
-                <Literal>
-                    <ID>PropertyType</ID>
-                    <ToolTip>The type of the property.</ToolTip>
-                    <Default>int</Default>
-                </Literal>
+		</Header>
+		<Snippet>
+			<Declarations>
 				<Literal>
-                    <ID>PropertyName</ID>
-                    <ToolTip>The name of your property.</ToolTip>
-                    <Default>MyProperty</Default>
-                </Literal>
+					<ID>PropertyType</ID>
+					<ToolTip>The type of the property.</ToolTip>
+					<Default>int</Default>
+				</Literal>
 				<Literal>
-                    <ID>BackingSomething</ID>
-                    <ToolTip>A backing field or anything you want to delegate to.</ToolTip>
-                    <Default>MyBackingField</Default>
-                </Literal>
-            </Declarations>
-            <Code Language="CSharp">
-                <![CDATA[public $PropertyType$ $PropertyName$
+					<ID>PropertyName</ID>
+					<ToolTip>The name of your property.</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+				<Literal>
+					<ID>BackingSomething</ID>
+					<ToolTip>A backing field or anything you want to delegate to.</ToolTip>
+					<Default>MyBackingField</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="CSharp">
+				<![CDATA[public $PropertyType$ $PropertyName$
 				{
 					get
 					{
@@ -37,7 +37,7 @@
 						$BackingSomething$ = value;
 					}
 				}]]>
-            </Code>
-        </Snippet>
-    </CodeSnippet>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
 </CodeSnippets>
