@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>NUnit Test-Setup Method</Title>
+			<Author>Jan Sandbrink</Author>
+			<Shortcut>nsetup</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>MethodName</ID>
+					<ToolTip>The name of the setup-method.</ToolTip>
+					<Default>SetUp</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="CSharp">
+				<![CDATA[[SetUp]
+				public void $MethodName$()
+				{
+					$end$
+				}]]>
+			</Code>
+		</Snippet>
+		<Imports>
+			<Import>
+			   <Namespace>NUnit.Framework</Namespace>
+			</Import>
+		</Imports>
+	</CodeSnippet>
+</CodeSnippets>
